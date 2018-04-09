@@ -1,29 +1,35 @@
+
 var wordList = [
     'NewStart',
-    'nextMove',
-    'JavaScript',
-    'Have no idea'
+    'nextmove',
+    'havascript',
+    'havenoidea'
 ]
+//  var wordToPick="";
+//  var maskedWord=[]
 
-var wordToPick="";
+var randomSelect = Math.floor(Math.random() * wordList.length);
+var currentWordIndex = wordList[randomSelect];
 
 
-function gameWord(){
-var maskedWord=[]
-    wordToPick = wordList[Math.floor(Math.random()*wordList.length)]
+
+    var wordToPick = "";
+    var maskedWord = []
+    wordToPick = wordList[Math.floor(Math.random() * wordList.length)]
     letterToBrake = wordToPick.split("")
 
-    for( var i =0; i<letterToBrake.length;i++){
-        maskedWord.push("*")
+    for (var i = 0; i < letterToBrake.length; i++) {
+        maskedWord.push("_")
     }
-    console.log(`word was selected : ${wordToPick}`)
-    console.log(`word was masked: ${maskedWord}`)
 
+
+
+
+
+
+module.exports = {
+    currentWordIndex: currentWordIndex,
+    wordList: wordList,
+    maskedWord:maskedWord
 }
 
-
-
-
-
-
-gameWord()
