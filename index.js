@@ -12,31 +12,18 @@ var guessedLetters = [];
 var wordList = Word.wordList;
 var currentWordIndex =Word.currentWordIndex
 var guessingWord = [];
-var remainingGuesses = 10;
+var remainingGuesses = 5;
 var gameStarted = false;
 var gameEnded = false;
- var checkinnnnn = function(currentWordIndex){
-   console.log(` neewwww stuff${currentWordIndex}`) 
- }
- checkinnnnn()
+
 
 function updateDisplay() {
 if (remainingGuesses> 0)
 {
     for (var i = 0; i < guessingWord.length; i++) {
-        // console.log(`inside updateDisplay:
-        // guessedLetters :${guessedLetters}
-        // remainingGuesses : ${remainingGuesses}
-        // guessingWord:   ${guessingWord}
-        // currentWord :${currentWordIndex}
-    
-        // `)
     }
 }
-   
 
-    ///main console long 
- 
     else {
         console.log("game over")
         gameEnded = true;

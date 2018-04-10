@@ -1,8 +1,8 @@
 
 var wordList = [
-    'NewStart',
+    'newstart',
     'nextmove',
-    'havascript',
+    'javascript',
     'havenoidea'
 ]
 //  var wordToPick="";
@@ -13,14 +13,14 @@ var currentWordIndex = wordList[randomSelect];
 
 
 
-    var wordToPick = "";
-    var maskedWord = []
-    wordToPick = wordList[Math.floor(Math.random() * wordList.length)]
-    letterToBrake = wordToPick.split("")
+    // var wordToPick = "";
+    // var maskedWord = []
+    // wordToPick = wordList[Math.floor(Math.random() * wordList.length)]
+    // letterToBrake = wordToPick.split("")
 
-    for (var i = 0; i < letterToBrake.length; i++) {
-        maskedWord.push("_")
-    }
+    // for (var i = 0; i < letterToBrake.length; i++) {
+    //     maskedWord.push("_")
+    // }
 
 
 
@@ -29,7 +29,6 @@ var currentWordIndex = wordList[randomSelect];
 
 module.exports = {
     currentWordIndex: currentWordIndex,
-    wordList: wordList,
-    maskedWord:maskedWord
+    wordList: wordList
 }
 
